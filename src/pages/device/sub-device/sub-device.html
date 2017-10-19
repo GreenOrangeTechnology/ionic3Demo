@@ -1,0 +1,40 @@
+﻿<!--
+  Generated template for the SubDevicePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>蓝牙控灯</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+		<div class="item range range-calm">
+            <i class="icon ion-ios-lightbulb-outline"></i>
+            <input type="range" id="myRange" name="volume" min="0" max="100" value="25">
+            <i class="icon ion-ios-lightbulb"></i>
+          </div>
+	<!--灯光进度条 图片按钮开关 label-->
+	灯光亮度值:<label>25</label>
+	<button ion-button >开灯</button>
+	<button ion-button >关灯</button>
+	
+	<button onclick="getLightValue()">试一下</button>
+
+<p id="demo"></p>
+
+	<ion-label>电灯开关</ion-label>
+	<ion-toggle color="royal" checked="false" (ionChange)="toggleChange()"></ion-toggle>
+
+</ion-content>
+
+
+
+
