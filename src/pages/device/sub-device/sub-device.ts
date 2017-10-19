@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+//socket.io与服务端进行通信
 /**
  * Generated class for the SubDevicePage page.
  *
