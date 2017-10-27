@@ -35,9 +35,17 @@ export class HomePage {
   
   
   jump(){
-	  alert("123");
-	  this.navCtrl.push(SubDevicePage);//跳转到灯光页面 
-	  
-  }
+		this.navCtrl.push(SubDevicePage,{username:'kjw',password:123456});//法1:新页面推送到堆栈(跳转到灯光页面),第二个参数可带参
+																		//{id: "123",name: "Carl"}
+		//法2:	[navParams]属性：Component的类里带的参数params: Object;pushPage: any;constructor(){this.pushPage= LoginPage;this.params ={ id:42};}
+		//<button ion-button [navPush]="pushPage"[navParams]="params">
+		
+		//法3:modal的create方法(第二个参数)
+		//let modal =this.modalCtrl.create(SubDevicePage,{username:'kjw',password:123456});
+		//modal.present();
 
+		//法4:url传值   法5:tab传值
+
+		//统一在NavParams类接收参数
+	}
 }

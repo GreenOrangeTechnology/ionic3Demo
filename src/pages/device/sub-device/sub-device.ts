@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class SubDevicePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+      let userInfo = navParams.data;
   }
 
   ionViewDidLoad() {
@@ -38,7 +39,9 @@ export class SubDevicePage {
   
   toggleChange(){
 	  //let lightState;
-	  alert("点击了开关");
+    alert("change");
+    
+    //console.log();
   }
 
 }

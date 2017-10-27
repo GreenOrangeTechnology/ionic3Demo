@@ -1,26 +1,25 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a starter project for my smartHome projects.
 
-## How to use this template
+## How to use this project
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+To use this project With the Ionic CLI:
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
+Firstly:join the root directory
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
+npm install
+ionic serve
 ```
 
-Then, to run it, cd into `myTabs` and run:
-
+if you want to build the project in your mobile phone,you should do this
+with your mobile phone connection
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ ionic cordova platform add androids
+$ ionic cordova run android
 ```
 
-Substitute ios for android if not on a Mac.
+### learn note
+karma-test  http://blog.csdn.net/xuexiiphone/article/details/52233289
+http://blog.fens.me/nodejs-karma-jasmine/
+unit-test http://blog.csdn.net/u010730126/article/details/51082068
+UML-Tool  https://www.processon.com/diagrams/new?team=59ebeaefe4b07162476ce380#temp-system
 
